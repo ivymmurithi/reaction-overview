@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Table from "./Table";
 import Form from "./Form";
+import Api from "./Api";
 
 // ? Class Component
 // ? class App extends Component {
@@ -55,6 +56,7 @@ class App extends Component {
         <div>
           <Table characterData={characters} removeCharacter={this.removeCharacter} />
           <Form handleSubmit={this.handleSubmit} />
+          <Api/>
         </div>
       )
     }
